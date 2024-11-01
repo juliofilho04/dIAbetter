@@ -2,6 +2,8 @@ from flask import Flask, request, render_template
 import pickle
 import numpy as np
 import pandas as pd
+import os
+
 
 data = pd.read_csv('data_final.csv') 
 
@@ -74,4 +76,5 @@ def predict():
         return f'Ocorreu um erro: {e}'
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Define a porta a partir da variável de ambiente, com 5000 como fallback
+    app.run(host="0.0.0.0", port=port)
