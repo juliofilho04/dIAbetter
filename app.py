@@ -5,7 +5,7 @@ import pandas as pd
 import os
 
 
-data = pd.read_csv('data_final.csv') 
+data = pd.read_csv('diabetes_dataframe.csv') 
 
 app = Flask(__name__)
 
@@ -36,8 +36,8 @@ def preprocess_input(data):
 def home():
     return render_template('index.html')
 
-@app.route('/outra')
-def outra_pagina():
+@app.route('/imc')
+def imc_pagina():
     return render_template('imc.html')
 
 @app.route('/predict', methods=['POST'])
@@ -62,9 +62,9 @@ def predict():
         prediction = model.predict(processed_data)[0]
         
         if float(prediction) == 0.0:
-            resultado_texto = "É improvável haver diabetes."
+            resultado_texto = "É improvável que tenha diabetes."
         elif float(prediction) == 1.0:
-            resultado_texto = "É provável que haja diabetes."
+            resultado_texto = "É provável que tenha diabetes."
         else:
         # Caso ocorra um valor decimal inesperado
             resultado_texto = f"Resultado: {round(float(prediction), 2)}"
