@@ -1,10 +1,11 @@
+<img id="logo" src="{{ url_for('static', filename='logo.svg') }}" alt="logo">
 # Prevenção de Diabetes
 
 Este é um projeto de aplicação web, desenvolvido com Flask, que utiliza um modelo de aprendizado de máquina para prever a probabilidade de uma pessoa ter diabetes com base em informações clínicas e pessoais. Além disso, o projeto oferece uma funcionalidade para calcular o IMC (Índice de Massa Corporal).
 
 ---
 
-## 📋 Índice
+## Índice
 
 - [Sobre o Projeto](#sobre-o-projeto)
 - [Funcionalidades](#funcionalidades)
@@ -14,7 +15,7 @@ Este é um projeto de aplicação web, desenvolvido com Flask, que utiliza um mo
 
 ---
 
-## 🧐 Sobre o Projeto
+##  Sobre o Projeto
 
 Este projeto tem como objetivo ajudar na identificação de possíveis casos de diabetes por meio de um sistema simples e acessível. A aplicação utiliza um modelo de machine learning treinado previamente, permitindo uma interação fácil e resultados rápidos para o usuário.
 
@@ -22,7 +23,7 @@ Além da funcionalidade principal de prevenção, o projeto também oferece ferr
 
 ---
 
-## ⚙️ Funcionalidades
+##  Funcionalidades
 
 - Prevenção de diabetes baseada em:
   - Idade
@@ -36,7 +37,7 @@ Além da funcionalidade principal de prevenção, o projeto também oferece ferr
 
 ---
 
-## 🚀 Como Usar
+##  Como Usar
 
 ### Pré-requisitos
 Antes de começar, você precisará ter instalado em sua máquina:
@@ -65,5 +66,5 @@ Pandas e NumPy - Manipulação e análise de dados.
 Pickle - Serialização do modelo de machine learning.
 HTML, CSS e Bootstrap - Interface do usuário.
 
-📝 Licença
+## Licença
 Este projeto está sob a licença MIT. Para mais informações, consulte o arquivo LICENSE.
