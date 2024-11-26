@@ -1,5 +1,6 @@
 <img id="logo" src="static/logo.svg" alt="logo" width="200">
-# Prevenção de Diabetes
+
+## Prevenção de Diabetes
 
 Este é um projeto de aplicação web, desenvolvido com Flask, que utiliza um modelo de aprendizado de máquina para prever a probabilidade de uma pessoa ter diabetes com base em informações clínicas e pessoais. Além disso, o projeto oferece uma funcionalidade para calcular o IMC (Índice de Massa Corporal).
 
